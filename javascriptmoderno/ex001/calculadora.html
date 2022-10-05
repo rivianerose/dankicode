@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var numeroInicial = prompt("Informe o primeiro número...");
+   
+        var sinal = prompt("Informe o sinal...")
+
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+
+            alert('por favor informe um sinal válido!')
+             sinal = prompt("Informe o sinal...")
+        }
+        var numeroFinal = prompt("Informe um último número...")
+
+
+        // funções para transformar uma string em número : !important
+        numeroInicial = parseInt(numeroInicial);
+        numeroFinal = parseInt(numeroFinal);
+        var resultadoFinal = 0;
+
+        if(sinal == '+') {
+            resultadoFinal = numeroInicial + numeroFinal
+        } else if(sinal == '-') {
+            resultadoFinal = numeroInicial - numeroFinal
+        } else if (sinal =='/'){
+            resultadoFinal = numeroInicial / numeroFinal
+        } else if (sinal == '*') {
+            resultadoFinal = numeroInicial * numeroFinal
+        }
+
+        alert('o resultado final é ' + resultadoFinal)
+    </script>
+</body>
+</html>
